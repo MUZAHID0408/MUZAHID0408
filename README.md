@@ -3,4 +3,4 @@
 
 ****Hi there!!!****
 
-My name is MD Muzahidul Islam, and I am excited to introduce myself to all of you. I am a programmer and problem solver from Bangladesh with a passion for coding and a natural talent for solving challenges.
+My name is MD Muzahidul Islam, and I am excited to introduce myself to all of you. I am a programmer and problem solver from Bangladesh with a passion for coding and problem solving.
