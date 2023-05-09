@@ -1,5 +1,11 @@
 ![My_Vi_AdobeExpress](https://user-images.githubusercontent.com/121981117/236917458-b5aea697-8b21-40d5-91fb-5c0a200a2a81.gif)
-Hey I am MD Muzahidul Islam, and I am excited to introduce myself to all of you. I am a programmer and problem solver from Bangladesh with a passion for coding and problem solving.
+
+
+****Hey**** 
+
+I am **MD Muzahidul Islam**, and I am excited to introduce myself to all of you. I am a programmer and problem solver from Bangladesh with a passion for coding and problem solving.
+
+
 Skills: CSS / HTML/ C++/ JAVA/ JAVA SWING
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/MUZAHID0408)  
