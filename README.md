@@ -2,7 +2,7 @@
 
 ****Hey**** 
 
-I am **MD Muzahidul Islam**, and I am excited to introduce myself to all of you. I am a programmer and problem solver from Bangladesh with a passion for coding and problem solving.
+I am **MD Muzahidul Islam**, and I am excited to introduce myself to all of you. I am a programmer and problem solver from Bangladesh with a passion for coding and problem-solving.
 
 
 Skills: CSS / HTML/ C++/ JAVA/ JAVA SWING
@@ -11,14 +11,6 @@ Skills: CSS / HTML/ C++/ JAVA/ JAVA SWING
 
 <a href='https://archiveprogram.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif' width='40' height='40'></a> 
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=MUZAHID0408)](https://github.com/ryo-ma/github-profile-trophy)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MUZAHID0408)](https://github.com/anuraghazra/github-readme-stats)
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=MUZAHID0408&show_icons=true)  
-
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=MUZAHID0408)  
-
-![GitHub metrics](https://metrics.lecoq.io/MUZAHID0408)  
+ 
 
 
