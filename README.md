@@ -4,7 +4,7 @@ I am an undergraduate student in Computer Science and Engineering at Green Unive
 
 ## 🌐 Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/mdmuzahid.mi) 
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=twitter&logoColor=white)]([https://twitter.com/yourusername](https://x.com/mdmuzahid0408))
+[![X(Formerly Twitter)](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=twitter&logoColor=white)]([https://twitter.com/yourusername](https://x.com/mdmuzahid0408))
 
 
 # 💻 Tech Stack:
