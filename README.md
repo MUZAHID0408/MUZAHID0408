@@ -1,5 +1,5 @@
 # 💫 About Me:
-Gaining skills for a machine learning and Development path.<br>In the future, I aim to work on projects related to machine learning and similar development areas.<br>
+I am an undergraduate student in Computer Science and Engineering at Green University of Bangladesh, currently specializing in Climate Change Analysis and Natural Disaster Prediction using Machine Learning and I’m really interested in using AI to help solve environmental problems.<br>
 
 
 ## 🌐 Socials:
