@@ -1,10 +1,6 @@
 <h1 align="center">Hi!! I'm Md Muzahidul Islam</h1>
 <h3 align="center">I am an undergraduate student in Computer Science and Engineering at Green University of Bangladesh, currently specializing in Climate Change Analysis and Natural Disaster Prediction using Machine Learning and I’m really interested in using AI to help solve environmental problems.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=muzahid0408&label=Profile%20views&color=0e75b6&style=flat" alt="muzahid0408" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=muzahid0408" alt="muzahid0408" /></a> </p>
-
 
 - 📫 How to reach me **mdmuzahid0408@gmail.com**
 
