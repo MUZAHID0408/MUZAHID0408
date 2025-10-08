@@ -5,7 +5,6 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=muzahid0408" alt="muzahid0408" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/mdmuzahid0408" target="blank"><img src="https://img.shields.io/twitter/follow/mdmuzahid0408?logo=twitter&style=for-the-badge" alt="mdmuzahid0408" /></a> </p>
 
 - 📫 How to reach me **mdmuzahid0408@gmail.com**
 
