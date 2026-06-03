@@ -69,10 +69,6 @@ Using public datasets from **NASA** and **NOAA** to build predictive models for:
 
 ---
 
-
-
----
-
 ## Philosophy
 
 ```text
