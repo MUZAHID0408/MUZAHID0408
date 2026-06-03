@@ -19,9 +19,9 @@
 
 ## About
 
-CS student from Bangladesh on a mission to turn deep knowledge into real-world impact. I'm not here to skim the surface — I want to understand *why* things work, not just *how*.
+CS student from Bangladesh on a mission to turn deep knowledge into real-world impact. I want to understand the *why* , not just *how*.
 
-Currently channeling my energy into machine learning research, cross-platform app development, and web engineering. Outside the terminal, I produce music under the alias **K!YO**.
+Currently channeling my energy into machine learning research, cross-platform app development, and web engineering. Outside the terminal I like to travel and do some physical acitvity like playing, fishing.
 
 ---
 
@@ -34,6 +34,8 @@ Using public datasets from **NASA** and **NOAA** to build predictive models for:
 `Floods` · `Cyclones` · `Droughts` · `Wildfires`
 
 > Climate data doesn't lie. ML just helps us listen to it.
+
+**Language Processing:** *Published paper in which I finetuned a smaller base model (Gemma-3) to analyze how dataset can impact smaller models performance for python code generation when I use Bangla instructions.
 
 ---
 
@@ -63,7 +65,7 @@ Using public datasets from **NASA** and **NOAA** to build predictive models for:
 - 🌍 ML research on climate & natural disaster prediction
 - 📱 Learning Flutter to build cross-platform apps
 - 🌐 Sharpening full-stack web development skills
-- 🎵 Creating music as **K!YO**
+
 
 ---
 
