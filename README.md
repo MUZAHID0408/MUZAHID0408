@@ -11,7 +11,7 @@
 
 ### Developer · Researcher
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=Building+things+that+matter.;ML+%7C+Web+%7C+Flutter+%7C+Python;Climate+%26+Disaster+Prediction+Research;Also+make+music+as+K!YO+%F0%9F%8E%B5)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=Building+things+that+matter.;ML+%7C+Web+%7C+Flutter+%7C+Python;Climate+%26+Disaster+Prediction+Research)](https://git.io/typing-svg)
 
 </div>
 
