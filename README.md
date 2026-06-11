@@ -19,9 +19,9 @@
 
 ## About
 
-CS student from Bangladesh on a mission to turn deep knowledge into real-world impact. I want to understand the *why* , not just *how*.
+I am a CS student from Bangladesh tyring to create something that can make a impact. I want to understand the *why* , not just *how*.
 
-Currently channeling my energy into machine learning research, cross-platform app development, and web engineering. Outside the terminal I like to travel and do some physical acitvity like playing, fishing.
+Currently channeling my energy into machine learning research, cross-platform app development, and web engineering . Outside the terminal I like to travel and do some physical acitvity like playing, fishing.
 
 ---
 
@@ -29,11 +29,11 @@ Currently channeling my energy into machine learning research, cross-platform ap
 
 **Thesis:** *Machine Learning Models for Analyzing Climate Change and Predicting Natural Disasters*
 
-Using public datasets from **NASA** and **NOAA** to build predictive models for:
+Curated a time series databse using multiple sources to build predictive models for:
 
 `Floods` · `Cyclones` · `Droughts` · `Wildfires`
 
-> Climate data doesn't lie. ML just helps us listen to it.
+> For now we are only working to Predict Floods... In upcoming days we will expand the model to use other disasters I mentioned.
 
 **Language Processing:** *Published paper in which I finetuned a smaller base model (Gemma-3) to analyze how dataset can impact smaller models performance for python code generation when I use Bangla instructions.
 
