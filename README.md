@@ -25,7 +25,7 @@ Currently channeling my energy into machine learning research, cross-platform ap
 
 ---
 
-## 🔬 Research
+##  Research
 
 **Thesis:** *Machine Learning Models for Analyzing Climate Change and Predicting Natural Disasters*
 
@@ -39,7 +39,7 @@ Using public datasets from **NASA** and **NOAA** to build predictive models for:
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 **Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -60,11 +60,11 @@ Using public datasets from **NASA** and **NOAA** to build predictive models for:
 
 ---
 
-## 📌 What I'm Working On
+##  What I'm Working On
 
-- 🌍 ML research on climate & natural disaster prediction
-- 📱 Learning Flutter to build cross-platform apps
-- 🌐 Sharpening full-stack web development skills
+○  ML research on climate & natural disaster prediction
+○  Learning Flutter to build cross-platform apps
+○  Sharpening full-stack web development skills
 
 
 ---
