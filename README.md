@@ -39,9 +39,9 @@ Curated a time series databse using multiple sources to build predictive models 
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
-### 💻 Programming Languages
+### Programming Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
@@ -53,7 +53,7 @@ Curated a time series databse using multiple sources to build predictive models 
 
 ---
 
-### 🌐 Web Technologies
+### Web Technologies
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -61,7 +61,7 @@ Curated a time series databse using multiple sources to build predictive models 
 
 ---
 
-### ⚙️ Frameworks & Libraries
+### Frameworks & Libraries
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -73,7 +73,7 @@ Curated a time series databse using multiple sources to build predictive models 
 
 ---
 
-### 🤖 Machine Learning & AI
+### Machine Learning & AI
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
@@ -87,21 +87,21 @@ Curated a time series databse using multiple sources to build predictive models 
 
 ---
 
-### 🗄️ Databases
+### Databases
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
 ---
 
-### 🛠️ Development Tools
+### Development Tools
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
 ---
 
-### 🔬 Research Interests
+### Research Interests
 ![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-4285F4?style=flat-square)
 ![Computer Vision](https://img.shields.io/badge/Computer_Vision-FF6F00?style=flat-square)
 ![Climate Analytics](https://img.shields.io/badge/Climate_Analytics-2E8B57?style=flat-square)
@@ -111,7 +111,7 @@ Curated a time series databse using multiple sources to build predictive models 
 
 ---
 
-##  What I'm Working On
+## What I'm Working On
 
 ○  ML research on climate & natural disaster prediction
 ○  Learning Flutter to build cross-platform apps
