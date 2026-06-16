@@ -82,6 +82,6 @@ tools     │  Git · Jupyter · GitHub
 
 <br>
 
-`ahid@dev:~/open-to-collab$` &nbsp; open to collaborations on ML · web · mobile
+`mdmuzahid0408@gmail.com:~/open-to-collab$` &nbsp; open to collaborations on ML · web · mobile
 
 </div>
