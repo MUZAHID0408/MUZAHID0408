@@ -1,0 +1,79 @@
+<svg width="800" height="230" viewBox="0 0 800 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes lineGrow {
+      0%   { width: 0; opacity: 0; }
+      100% { width: 100%; opacity: 1; }
+    }
+    @keyframes rowFade {
+      0%   { opacity: 0; transform: translateX(-8px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes pipeDraw {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .r0 { animation: rowFade 0.5s ease 0.1s both; }
+    .r1 { animation: rowFade 0.5s ease 0.25s both; }
+    .r2 { animation: rowFade 0.5s ease 0.40s both; }
+    .r3 { animation: rowFade 0.5s ease 0.55s both; }
+    .r4 { animation: rowFade 0.5s ease 0.70s both; }
+    .r5 { animation: rowFade 0.5s ease 0.85s both; }
+    .sep { animation: pipeDraw 0.4s ease 1.0s both; }
+    .label { font-family: 'Courier New',monospace; font-size: 9.5px; fill: rgba(232,232,234,0.25); letter-spacing: 2px; text-transform: uppercase; }
+    .value { font-family: 'Courier New',monospace; font-size: 11px; fill: rgba(232,232,234,0.62); }
+    .pipe  { font-family: 'Courier New',monospace; font-size: 11px; fill: rgba(255,255,255,0.12); }
+  </style>
+
+  <!-- top rule -->
+  <line x1="0" y1="0" x2="800" y2="0" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <!-- bottom rule -->
+  <line x1="0" y1="230" x2="800" y2="230" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+
+  <!-- accent left bar -->
+  <rect x="0" y="0" width="2" height="230" fill="#4af0a0" opacity="0.5"/>
+
+  <!-- section tag -->
+  <text x="18" y="20" font-family="'Courier New',monospace" font-size="9" fill="rgba(74,240,160,0.5)" letter-spacing="3">// STACK</text>
+
+  <!-- rows -->
+  <g class="r0">
+    <text x="18"  y="50"  class="label">lang</text>
+    <text x="110" y="50"  class="pipe">│</text>
+    <text x="128" y="50"  class="value">Python · JavaScript · Dart · PHP · C · C++ · Java · SQL</text>
+  </g>
+  <g class="r1">
+    <text x="18"  y="76"  class="label">web</text>
+    <text x="110" y="76"  class="pipe">│</text>
+    <text x="128" y="76"  class="value">React · Node.js · Express · FastAPI · Flask · REST</text>
+  </g>
+  <g class="r2">
+    <text x="18"  y="102" class="label">mobile</text>
+    <text x="110" y="102" class="pipe">│</text>
+    <text x="128" y="102" class="value">Flutter</text>
+  </g>
+  <g class="r3">
+    <text x="18"  y="128" class="label">ml / ai</text>
+    <text x="110" y="128" class="pipe">│</text>
+    <text x="128" y="128" class="value">NumPy · Pandas · OpenCV · LangGraph · RAG · LLM fine-tuning · NLP</text>
+  </g>
+  <g class="r4">
+    <text x="18"  y="154" class="label">data</text>
+    <text x="110" y="154" class="pipe">│</text>
+    <text x="128" y="154" class="value">MongoDB · MySQL · SQLite · SQLAlchemy · Mongoose</text>
+  </g>
+  <g class="r5">
+    <text x="18"  y="180" class="label">tools</text>
+    <text x="110" y="180" class="pipe">│</text>
+    <text x="128" y="180" class="value">Git · Jupyter · GitHub</text>
+  </g>
+
+  <!-- divider rows -->
+  <line x1="18" y1="60"  x2="782" y2="60"  stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+  <line x1="18" y1="86"  x2="782" y2="86"  stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+  <line x1="18" y1="112" x2="782" y2="112" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+  <line x1="18" y1="138" x2="782" y2="138" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+  <line x1="18" y1="164" x2="782" y2="164" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+
+  <!-- vertical pipe full height -->
+  <line x1="110" y1="32" x2="110" y2="192" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="800" height="148" viewBox="0 0 800 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes slideIn {
+      0%   { opacity: 0; transform: translateX(-10px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes expandBar {
+      0%   { width: 0; }
+      100% { width: var(--w); }
+    }
+    @keyframes badgePop {
+      0%   { opacity: 0; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+    .i1 { animation: slideIn 0.5s ease 0.2s both; }
+    .i2 { animation: slideIn 0.5s ease 0.4s both; }
+    .i3 { animation: slideIn 0.5s ease 0.6s both; }
+    .b1 { animation: badgePop 0.4s ease 0.5s both; }
+    .b2 { animation: badgePop 0.4s ease 0.7s both; }
+    .b3 { animation: badgePop 0.4s ease 0.9s both; }
+    .live { animation: pulse 2.2s ease-in-out infinite; }
+    .idx  { font-family: 'Courier New',monospace; font-size: 9px; fill: rgba(232,232,234,0.2); }
+    .txt  { font-family: 'Courier New',monospace; font-size: 11px; fill: rgba(232,232,234,0.72); }
+  </style>
+
+  <rect x="0" y="0" width="2" height="148" fill="#4af0a0" opacity="0.4"/>
+  <text x="18" y="20" font-family="'Courier New',monospace" font-size="9" fill="rgba(74,240,160,0.5)" letter-spacing="3">// CURRENT</text>
+
+  <!-- row 1 -->
+  <g class="i1">
+    <text x="18"  y="52" class="idx">01</text>
+    <text x="46"  y="52" class="txt">Flood prediction pipeline — raw data to deployable model</text>
+    <rect class="b1" x="616" y="40" width="52" height="18" rx="3" fill="rgba(74,240,160,0.12)"/>
+    <circle class="live" cx="626" cy="49" r="3" fill="#4af0a0"/>
+    <text class="b1" x="660" y="53" font-family="'Courier New',monospace" font-size="8.5" fill="#4af0a0" text-anchor="middle">active</text>
+  </g>
+  <line x1="18" y1="63" x2="782" y2="63" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+
+  <!-- row 2 -->
+  <g class="i2">
+    <text x="18"  y="90" class="idx">02</text>
+    <text x="46"  y="90" class="txt">Flutter — learning by building, not by tutorial</text>
+    <rect class="b2" x="604" y="78" width="70" height="18" rx="3" fill="rgba(240,184,74,0.1)"/>
+    <text class="b2" x="639" y="91" font-family="'Courier New',monospace" font-size="8.5" fill="rgba(240,184,74,0.85)" text-anchor="middle">learning</text>
+  </g>
+  <line x1="18" y1="101" x2="782" y2="101" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+
+  <!-- row 3 -->
+  <g class="i3">
+    <text x="18"  y="128" class="idx">03</text>
+    <text x="46"  y="128" class="txt">Full-stack depth — less surface area, more structural understanding</text>
+    <rect class="b3" x="604" y="116" width="68" height="18" rx="3" fill="rgba(240,96,96,0.08)"/>
+    <text class="b3" x="638" y="129" font-family="'Courier New',monospace" font-size="8.5" fill="rgba(240,96,96,0.8)" text-anchor="middle">building</text>
+  </g>
+</svg>

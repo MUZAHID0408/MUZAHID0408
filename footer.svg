@@ -1,0 +1,55 @@
+<svg width="800" height="140" viewBox="0 0 800 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes fadeUp {
+      0%   { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+    @keyframes drawLine {
+      0%   { stroke-dashoffset: 800; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.08; }
+      50%       { opacity: 0.18; }
+    }
+    .philosophy { animation: fadeUp 0.7s ease 0.1s both; }
+    .uni        { animation: fadeUp 0.7s ease 0.4s both; }
+    .prompt     { animation: fadeUp 0.7s ease 0.7s both; }
+    .cursor     { animation: blink 1.1s step-end infinite; }
+    .topline    { stroke-dasharray: 800; animation: drawLine 1s ease 0s both; }
+    .glow       { animation: glowPulse 3s ease-in-out infinite; }
+  </style>
+
+  <line class="topline" x1="0" y1="0" x2="800" y2="0" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+
+  <!-- subtle glow behind philosophy -->
+  <ellipse cx="400" cy="38" rx="280" ry="22" fill="#4af0a0" class="glow"/>
+
+  <!-- philosophy -->
+  <text class="philosophy" x="400" y="44" font-family="'Courier New',monospace" font-size="16" font-style="italic" font-weight="300" fill="rgba(232,232,234,0.22)" text-anchor="middle" letter-spacing="0.5">
+    Learn deeply. Build purposefully. Improve constantly.
+  </text>
+
+  <!-- university line -->
+  <text class="uni" x="400" y="78" font-family="'Courier New',monospace" font-size="9.5" fill="rgba(232,232,234,0.2)" text-anchor="middle" letter-spacing="1.5">
+    B.SC IN CSE  ·  GREEN UNIVERSITY OF BANGLADESH  ·  THESIS COMPLETED
+  </text>
+
+  <!-- terminal prompt -->
+  <g class="prompt">
+    <text x="400" y="116" font-family="'Courier New',monospace" font-size="11" text-anchor="middle">
+      <tspan fill="#4af0a0" font-weight="500">ahid</tspan>
+      <tspan fill="rgba(232,232,234,0.2)">@</tspan>
+      <tspan fill="rgba(240,184,74,0.65)">dev</tspan>
+      <tspan fill="rgba(232,232,234,0.2)">:</tspan>
+      <tspan fill="rgba(74,160,240,0.65)">~/open-to-collab</tspan>
+      <tspan fill="rgba(232,232,234,0.2)"> $ </tspan>
+      <tspan fill="rgba(232,232,234,0.4)">reach out — ML · web · mobile</tspan>
+    </text>
+    <rect class="cursor" x="588" y="103" width="7" height="14" rx="1" fill="#4af0a0" opacity="0.8"/>
+  </g>
+</svg>
