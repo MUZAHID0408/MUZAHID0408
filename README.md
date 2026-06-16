@@ -1,135 +1,87 @@
 <div align="center">
 
-```
-███╗   ███╗██╗   ██╗███████╗   █████╗ ██╗  ██╗██╗██████╗
-████╗ ████║██║   ██║╚════██║  ██╔══██╗██║  ██║██║██╔══██╗
-██╔████╔██║██║   ██║    ██╔╝  ███████║███████║██║██║  ██║
-██║╚██╔╝██║██║   ██║   ██╔╝   ██╔══██║██╔══██║██║██║  ██║
-██║ ╚═╝ ██║╚██████╔╝  ██║███║ ██║  ██║██║  ██║██║██████╔╝
-╚═╝     ╚═╝ ╚═════╝   ╚═╝════ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═════╝
-```
-
-### Developer · Researcher
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=Building+things+that+matter.;ML+%7C+Web+%7C+Flutter+%7C+Python;Climate+%26+Disaster+Prediction+Research)](https://git.io/typing-svg)
+<svg width="720" height="110" viewBox="0 0 720 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="360" y="52" font-family="'Courier New', monospace" font-size="42" font-weight="700" fill="#e8e8ea" text-anchor="middle" letter-spacing="-2">MUZ7<tspan fill="#4af0a0">.</tspan>AHID</text>
+  <text x="360" y="76" font-family="'Courier New', monospace" font-size="11" fill="rgba(232,232,234,0.4)" text-anchor="middle" letter-spacing="4">CS STUDENT · RESEARCHER · BUILDER</text>
+  <text x="360" y="98" font-family="'Courier New', monospace" font-size="10" fill="rgba(74,240,160,0.5)" text-anchor="middle" letter-spacing="2">⌘  ISHWARDI · BANGLADESH</text>
+</svg>
 
 </div>
 
 ---
 
-## About
+```
+// about
+```
 
-I am a CS student from Bangladesh tyring to create something that can make a impact. I want to understand the *why* , not just *how*.
-
-Currently channeling my energy into machine learning research, cross-platform app development, and web engineering . Outside the terminal I like to travel and do some physical acitvity like playing, fishing.
-
----
-
-##  Research
-
-**Thesis:** *Machine Learning Models for Analyzing Climate Change and Predicting Natural Disasters*
-
-Curated a time series databse using multiple sources to build predictive models for:
-
-`Floods` · `Cyclones` · `Droughts` · `Wildfires`
-
-> For now we are only working to Predict Floods... In upcoming days we will expand the model to use other disasters I mentioned.
-
-**Language Processing:** *Published paper in which I finetuned a smaller base model (Gemma-3) to analyze how dataset can impact smaller models performance for python code generation when I use Bangla instructions.
+I want to understand the *why*, not just the *how*.
+Building predictive models for climate-driven disasters, publishing on how dataset quality shapes small model behavior, and shipping cross-platform products. Outside the terminal — traveling, fishing, staying physical.
 
 ---
 
-## Tech Stack
+```
+// research
+```
 
-### Programming Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+**Climate Change & Natural Disaster Prediction** `thesis · ongoing`
 
----
+> Time series database curated from multiple sources. Predictive models for floods, cyclones, droughts, wildfires. The problem isn't accuracy alone — it's building something that works in data-sparse environments where lives depend on early warnings.
+>
+> *→ expanding to multi-hazard coverage*
 
-### Web Technologies
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![REST_API](https://img.shields.io/badge/REST_API-009688?style=flat-square)
+<br>
+
+**Low-Resource Model Behavior Under Bangla Instructions** `published`
+
+> Fine-tuned Gemma-3 on Bangla-instructed Python code generation. Core question: how much does dataset composition — not model size — drive performance on a narrow, underrepresented task?
+>
+> *→ more than most people assume*
 
 ---
 
-### Frameworks & Libraries
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=flat-square&logo=mongoose&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
+```
+// stack
+```
 
----
-
-### Machine Learning & AI
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-FF6F00?style=flat-square)
-![NLP](https://img.shields.io/badge/NLP-4285F4?style=flat-square)
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square)
-![LLM](https://img.shields.io/badge/Large_Language_Models-412991?style=flat-square)
-![RAG](https://img.shields.io/badge/RAG-0A66C2?style=flat-square)
-![LangGraph](https://img.shields.io/badge/LangGraph-000000?style=flat-square)
-
----
-
-### Databases
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-
----
-
-### Development Tools
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-
----
-
-### Research Interests
-![Natural Language Processing](https://img.shields.io/badge/Natural_Language_Processing-4285F4?style=flat-square)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-FF6F00?style=flat-square)
-![Climate Analytics](https://img.shields.io/badge/Climate_Analytics-2E8B57?style=flat-square)
-![Natural Disaster Prediction](https://img.shields.io/badge/Natural_Disaster_Prediction-D32F2F?style=flat-square)
-![Code Synthesis](https://img.shields.io/badge/Code_Synthesis-6A1B9A?style=flat-square)
-![Gemma 3 Fine-Tuning](https://img.shields.io/badge/Gemma_3_Fine_Tuning-4285F4?style=flat-square)
-
----
-
-## What I'm Working On
-
-○  ML research on climate & natural disaster prediction
-○  Learning Flutter to build cross-platform apps
-○  Sharpening full-stack web development skills
-
-
----
-
-## Philosophy
-
-```text
-Learn deeply. Build purposefully. Improve constantly.
+```
+lang      │  Python · JavaScript · Dart · PHP · C · C++ · Java · SQL
+web       │  React · Node.js · Express · FastAPI · Flask · REST
+mobile    │  Flutter
+ml / ai   │  NumPy · Pandas · OpenCV · LangGraph · RAG · LLM fine-tuning · NLP
+data      │  MongoDB · MySQL · SQLite · SQLAlchemy · Mongoose
+tools     │  Git · Jupyter · GitHub
 ```
 
 ---
 
+```
+// current
+```
+
+| # | work | status |
+|---|------|--------|
+| 01 | Flood prediction pipeline — raw data to deployable model | `active` |
+| 02 | Flutter — learning by building, not by tutorial | `learning` |
+| 03 | Full-stack depth — less surface area, more structural understanding | `building` |
+
+---
+
+```
+// interests
+```
+
+`Natural Language Processing` &nbsp; `Computer Vision` &nbsp; `Climate Analytics` &nbsp; `Disaster Prediction` &nbsp; `Code Synthesis` &nbsp; `Low-resource Model Behavior`
+
+---
+
+<br>
+
 <div align="center">
 
-*Open to collaborations on ML, web, or mobile projects.*
+*Learn deeply. Build purposefully. Improve constantly.*
+
+<br>
+
+`ahid@dev:~/open-to-collab$` &nbsp; open to collaborations on ML · web · mobile
 
 </div>
