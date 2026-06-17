@@ -39,11 +39,11 @@ Building predictive models for climate-driven disasters, publishing on how datas
 
 ---
 
-```
-// interests
-```
+<div align="center">
 
-`Natural Language Processing` &nbsp; `Computer Vision` &nbsp; `Climate Analytics` &nbsp; `Disaster Prediction` &nbsp; `Code Synthesis` &nbsp; `Low-resource Model Behavior`
+![interests](interests.svg)
+
+</div>
 
 <br>
 
