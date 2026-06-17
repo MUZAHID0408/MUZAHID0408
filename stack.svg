@@ -1,106 +1,98 @@
-<svg width="800" height="248" viewBox="0 0 800 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="252" viewBox="0 0 800 252" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* Swipe reveal per row — block sweeps right, text left behind */
-    @keyframes swipeReveal {
-      0%   { clip-path: inset(0 100% 0 0); }
-      100% { clip-path: inset(0 0% 0 0); }
-    }
+    /* Swipe reveal — wipe block exposes text */
+    @keyframes wipe{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 0% 0 0)}}
     /* Evaporate label */
-    @keyframes evap {
-      0%   { opacity: 0; filter: blur(6px); }
-      100% { opacity: 1; filter: blur(0); }
-    }
-    /* Accent bar grow */
-    @keyframes barGrow {
-      0%   { transform: scaleY(0); transform-origin: top; }
-      100% { transform: scaleY(1); transform-origin: top; }
-    }
-    /* Pipe line grow */
-    @keyframes pipeGrow {
-      0%   { transform: scaleY(0); transform-origin: top; opacity: 0; }
-      100% { transform: scaleY(1); transform-origin: top; opacity: 1; }
-    }
-    /* Row divider draw */
-    @keyframes divDraw {
-      0%   { stroke-dashoffset: 800; }
-      100% { stroke-dashoffset: 0; }
-    }
-    /* Glow pulse */
-    @keyframes glowPulse {
-      0%,100% { opacity: 0.06; }
-      50%      { opacity: 0.16; }
-    }
-    .bar  { animation: barGrow  0.6s cubic-bezier(.22,1,.36,1) 0.0s both; }
-    .pipe { animation: pipeGrow 0.6s cubic-bezier(.22,1,.36,1) 0.3s both; }
+    @keyframes evap{0%{opacity:0;filter:blur(8px)}100%{opacity:1;filter:blur(0)}}
+    /* Divider draw */
+    @keyframes divDraw{0%{stroke-dashoffset:800}100%{stroke-dashoffset:0}}
+    /* Vertical bar grow from top */
+    @keyframes vGrow{0%{transform:scaleY(0);transform-origin:top}100%{transform:scaleY(1);transform-origin:top}}
+    /* Column separator */
+    @keyframes colGrow{0%{transform:scaleY(0);transform-origin:top;opacity:0}100%{transform:scaleY(1);transform-origin:top;opacity:1}}
+    /* Number count flash */
+    @keyframes numFlash{0%{opacity:0;fill:#4af0a0}40%{fill:#4af0a0;opacity:1}100%{fill:rgba(74,240,160,0.25);opacity:1}}
 
-    .lbl0 { animation: evap 0.6s ease 0.15s both; }
-    .lbl1 { animation: evap 0.6s ease 0.28s both; }
-    .lbl2 { animation: evap 0.6s ease 0.41s both; }
-    .lbl3 { animation: evap 0.6s ease 0.54s both; }
-    .lbl4 { animation: evap 0.6s ease 0.67s both; }
-    .lbl5 { animation: evap 0.6s ease 0.80s both; }
+    .acc {animation:vGrow   0.5s cubic-bezier(.22,1,.36,1) 0.0s both}
+    .col {animation:colGrow 0.5s cubic-bezier(.22,1,.36,1) 0.4s both}
 
-    .val0 { animation: swipeReveal 0.7s cubic-bezier(.22,1,.36,1) 0.20s both; }
-    .val1 { animation: swipeReveal 0.7s cubic-bezier(.22,1,.36,1) 0.33s both; }
-    .val2 { animation: swipeReveal 0.7s cubic-bezier(.22,1,.36,1) 0.46s both; }
-    .val3 { animation: swipeReveal 0.7s cubic-bezier(.22,1,.36,1) 0.59s both; }
-    .val4 { animation: swipeReveal 0.7s cubic-bezier(.22,1,.36,1) 0.72s both; }
-    .val5 { animation: swipeReveal 0.7s cubic-bezier(.22,1,.36,1) 0.85s both; }
+    .lb0{animation:evap 0.5s ease 0.10s both}
+    .lb1{animation:evap 0.5s ease 0.22s both}
+    .lb2{animation:evap 0.5s ease 0.34s both}
+    .lb3{animation:evap 0.5s ease 0.46s both}
+    .lb4{animation:evap 0.5s ease 0.58s both}
+    .lb5{animation:evap 0.5s ease 0.70s both}
 
-    .div0 { stroke-dasharray:800; animation: divDraw 0.5s ease 0.25s both; }
-    .div1 { stroke-dasharray:800; animation: divDraw 0.5s ease 0.38s both; }
-    .div2 { stroke-dasharray:800; animation: divDraw 0.5s ease 0.51s both; }
-    .div3 { stroke-dasharray:800; animation: divDraw 0.5s ease 0.64s both; }
-    .div4 { stroke-dasharray:800; animation: divDraw 0.5s ease 0.77s both; }
+    .v0{animation:wipe 0.8s steps(55,end) 0.15s both}
+    .v1{animation:wipe 0.8s steps(48,end) 0.27s both}
+    .v2{animation:wipe 0.4s steps(8, end) 0.39s both}
+    .v3{animation:wipe 0.9s steps(65,end) 0.51s both}
+    .v4{animation:wipe 0.7s steps(50,end) 0.63s both}
+    .v5{animation:wipe 0.4s steps(20,end) 0.75s both}
 
-    .glow { animation: glowPulse 4s ease-in-out infinite; }
+    .n0{animation:numFlash 0.6s ease 0.05s both}
+    .n1{animation:numFlash 0.6s ease 0.17s both}
+    .n2{animation:numFlash 0.6s ease 0.29s both}
+    .n3{animation:numFlash 0.6s ease 0.41s both}
+    .n4{animation:numFlash 0.6s ease 0.53s both}
+    .n5{animation:numFlash 0.6s ease 0.65s both}
 
-    .hdr  { font-family:'Roboto Mono',monospace; font-size:9px; fill:rgba(74,240,160,0.5); letter-spacing:3px; }
-    .lbl  { font-family:'Roboto Mono',monospace; font-size:9.5px; fill:rgba(232,232,234,0.22); letter-spacing:1.5px; }
-    .val  { font-family:'Roboto Mono',monospace; font-size:11px; fill:rgba(232,232,234,0.65); }
+    .d0{stroke-dasharray:800;animation:divDraw 0.5s ease 0.20s both}
+    .d1{stroke-dasharray:800;animation:divDraw 0.5s ease 0.32s both}
+    .d2{stroke-dasharray:800;animation:divDraw 0.5s ease 0.44s both}
+    .d3{stroke-dasharray:800;animation:divDraw 0.5s ease 0.56s both}
+    .d4{stroke-dasharray:800;animation:divDraw 0.5s ease 0.68s both}
+
+    .hdr{font-family:'Roboto Mono',monospace;font-size:9px;fill:rgba(74,240,160,0.5);letter-spacing:3px}
+    .idx{font-family:'Roboto Mono',monospace;font-size:8.5px}
+    .lbl{font-family:'Roboto Mono',monospace;font-size:9.5px;fill:rgba(232,232,234,0.22);letter-spacing:1.5px}
+    .val{font-family:'Roboto Mono',monospace;font-size:11px;fill:rgba(232,232,234,0.65)}
   </style>
 
-  <!-- subtle bg glow -->
-  <rect x="0" y="0" width="4" height="248" fill="#4af0a0" class="glow"/>
-
-  <!-- left accent bar -->
-  <rect class="bar" x="0" y="0" width="3" height="248" fill="#4af0a0" opacity="0.55"/>
-
-  <!-- vertical pipe -->
-  <line class="pipe" x1="114" y1="30" x2="114" y2="220" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
-
-  <!-- border lines -->
   <line x1="0" y1="0"   x2="800" y2="0"   stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-  <line x1="0" y1="248" x2="800" y2="248" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="0" y1="252" x2="800" y2="252" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
 
-  <text class="hdr" x="18" y="22">// STACK</text>
+  <!-- left accent -->
+  <rect class="acc" x="0" y="0" width="3" height="252" fill="#4af0a0" opacity="0.5"/>
+  <!-- index column separator -->
+  <line class="col" x1="42" y1="28" x2="42" y2="226" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <!-- label column separator -->
+  <line class="col" x1="118" y1="28" x2="118" y2="226" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
 
-  <!-- Row 0 -->
-  <text class="lbl lbl0" x="18"  y="52">lang</text>
-  <g class="val0"><text class="val" x="130" y="52">Python · JavaScript · Dart · PHP · C · C++ · Java · SQL</text></g>
-  <line class="div0" x1="18" y1="63" x2="782" y2="63" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text class="hdr" x="14" y="20">// STACK</text>
 
-  <!-- Row 1 -->
-  <text class="lbl lbl1" x="18"  y="84">web</text>
-  <g class="val1"><text class="val" x="130" y="84">React · Node.js · Express · FastAPI · Flask · REST</text></g>
-  <line class="div1" x1="18" y1="95" x2="782" y2="95" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <!-- row 0 -->
+  <text class="idx n0" x="18" y="52">00</text>
+  <text class="lbl lb0" x="54" y="52">lang</text>
+  <g class="v0"><text class="val" x="132" y="52">Python · JavaScript · Dart · PHP · C · C++ · Java · SQL</text></g>
+  <line class="d0" x1="14" y1="63" x2="786" y2="63" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
 
-  <!-- Row 2 -->
-  <text class="lbl lbl2" x="18"  y="116">mobile</text>
-  <g class="val2"><text class="val" x="130" y="116">Flutter</text></g>
-  <line class="div2" x1="18" y1="127" x2="782" y2="127" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <!-- row 1 -->
+  <text class="idx n1" x="18" y="85">01</text>
+  <text class="lbl lb1" x="54" y="85">web</text>
+  <g class="v1"><text class="val" x="132" y="85">React · Node.js · Express · FastAPI · Flask · REST</text></g>
+  <line class="d1" x1="14" y1="96" x2="786" y2="96" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
 
-  <!-- Row 3 -->
-  <text class="lbl lbl3" x="18"  y="148">ml / ai</text>
-  <g class="val3"><text class="val" x="130" y="148">NumPy · Pandas · OpenCV · LangGraph · RAG · LLM fine-tuning · NLP</text></g>
-  <line class="div3" x1="18" y1="159" x2="782" y2="159" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <!-- row 2 -->
+  <text class="idx n2" x="18" y="118">02</text>
+  <text class="lbl lb2" x="54" y="118">mobile</text>
+  <g class="v2"><text class="val" x="132" y="118">Flutter</text></g>
+  <line class="d2" x1="14" y1="129" x2="786" y2="129" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
 
-  <!-- Row 4 -->
-  <text class="lbl lbl4" x="18"  y="180">data</text>
-  <g class="val4"><text class="val" x="130" y="180">MongoDB · MySQL · SQLite · SQLAlchemy · Mongoose</text></g>
-  <line class="div4" x1="18" y1="191" x2="782" y2="191" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <!-- row 3 -->
+  <text class="idx n3" x="18" y="151">03</text>
+  <text class="lbl lb3" x="54" y="151">ml / ai</text>
+  <g class="v3"><text class="val" x="132" y="151">NumPy · Pandas · OpenCV · LangGraph · RAG · LLM fine-tuning · NLP</text></g>
+  <line class="d3" x1="14" y1="162" x2="786" y2="162" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
 
-  <!-- Row 5 -->
-  <text class="lbl lbl5" x="18"  y="212">tools</text>
-  <g class="val5"><text class="val" x="130" y="212">Git · Jupyter · GitHub</text></g>
+  <!-- row 4 -->
+  <text class="idx n4" x="18" y="184">04</text>
+  <text class="lbl lb4" x="54" y="184">data</text>
+  <g class="v4"><text class="val" x="132" y="184">MongoDB · MySQL · SQLite · SQLAlchemy · Mongoose</text></g>
+  <line class="d4" x1="14" y1="195" x2="786" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+
+  <!-- row 5 -->
+  <text class="idx n5" x="18" y="217">05</text>
+  <text class="lbl lb5" x="54" y="217">tools</text>
+  <g class="v5"><text class="val" x="132" y="217">Git · Jupyter · GitHub</text></g>
 </svg>

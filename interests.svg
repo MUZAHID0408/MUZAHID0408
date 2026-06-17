@@ -1,83 +1,82 @@
-<svg width="800" height="90" viewBox="0 0 800 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="96" viewBox="0 0 800 96" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    /* Each tag evaporates in from blur */
-    @keyframes evap {
-      0%   { opacity:0; filter:blur(10px); transform:translateY(6px); }
-      100% { opacity:1; filter:blur(0);    transform:translateY(0);   }
-    }
-    /* Tag border draw */
-    @keyframes borderPop {
-      0%   { stroke-dashoffset:200; opacity:0; }
-      100% { stroke-dashoffset:0;   opacity:1; }
-    }
-    /* Shimmer loop on hover-like pass */
-    @keyframes shimmer {
-      0%,100% { opacity:0.65; }
-      50%      { opacity:1;    }
-    }
+    /* Jitter scramble into place */
+    @keyframes jit0{0%{opacity:0;transform:translateY(-14px) skewX(12deg)}65%{transform:translateY(2px) skewX(-2deg)}100%{opacity:1;transform:translateY(0) skewX(0)}}
+    @keyframes jit1{0%{opacity:0;transform:translateY(12px) skewX(-10deg)}65%{transform:translateY(-2px) skewX(2deg)}100%{opacity:1;transform:translateY(0) skewX(0)}}
+    @keyframes jit2{0%{opacity:0;transform:translateY(-16px) skewX(8deg)}68%{transform:translateY(3px) skewX(-1deg)}100%{opacity:1;transform:translateY(0) skewX(0)}}
+    @keyframes jit3{0%{opacity:0;transform:translateY(10px) skewX(-14deg)}62%{transform:translateY(-3px) skewX(3deg)}100%{opacity:1;transform:translateY(0) skewX(0)}}
+    @keyframes jit4{0%{opacity:0;transform:translateY(-12px) skewX(10deg)}65%{transform:translateY(2px) skewX(-2deg)}100%{opacity:1;transform:translateY(0) skewX(0)}}
+    @keyframes jit5{0%{opacity:0;transform:translateY(14px) skewX(-8deg)}67%{transform:translateY(-2px) skewX(1deg)}100%{opacity:1;transform:translateY(0) skewX(0)}}
+
+    /* Border draw */
+    @keyframes bdr{0%{stroke-dashoffset:220}100%{stroke-dashoffset:0}}
     /* Bar */
-    @keyframes barGrow {
-      0%   { transform:scaleY(0); transform-origin:top; }
-      100% { transform:scaleY(1); transform-origin:top; }
-    }
+    @keyframes vGrow{0%{transform:scaleY(0);transform-origin:top}100%{transform:scaleY(1);transform-origin:top}}
+    /* Breathe */
+    @keyframes breathe{0%,100%{opacity:0.55}50%{opacity:0.9}}
 
-    .bar { animation: barGrow 0.5s cubic-bezier(.22,1,.36,1) 0s both; }
+    .acc{animation:vGrow 0.5s cubic-bezier(.22,1,.36,1) 0s both}
 
-    .t0  { animation: evap 0.6s ease 0.10s both; }
-    .t1  { animation: evap 0.6s ease 0.22s both; }
-    .t2  { animation: evap 0.6s ease 0.34s both; }
-    .t3  { animation: evap 0.6s ease 0.46s both; }
-    .t4  { animation: evap 0.6s ease 0.58s both; }
-    .t5  { animation: evap 0.6s ease 0.70s both; }
-    .t6  { animation: evap 0.6s ease 0.82s both; }
+    .g0{animation:jit0 0.55s cubic-bezier(.22,1,.36,1) 0.08s both}
+    .g1{animation:jit1 0.55s cubic-bezier(.22,1,.36,1) 0.18s both}
+    .g2{animation:jit2 0.55s cubic-bezier(.22,1,.36,1) 0.28s both}
+    .g3{animation:jit3 0.55s cubic-bezier(.22,1,.36,1) 0.38s both}
+    .g4{animation:jit4 0.55s cubic-bezier(.22,1,.36,1) 0.48s both}
+    .g5{animation:jit5 0.55s cubic-bezier(.22,1,.36,1) 0.58s both}
 
-    .br0 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.18s both; }
-    .br1 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.30s both; }
-    .br2 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.42s both; }
-    .br3 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.54s both; }
-    .br4 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.66s both; }
-    .br5 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.78s both; }
-    .br6 { stroke-dasharray:200; animation: borderPop 0.5s ease 0.90s both; }
+    .b0{stroke-dasharray:220;animation:bdr 0.45s ease 0.16s both}
+    .b1{stroke-dasharray:220;animation:bdr 0.45s ease 0.26s both}
+    .b2{stroke-dasharray:220;animation:bdr 0.45s ease 0.36s both}
+    .b3{stroke-dasharray:220;animation:bdr 0.45s ease 0.46s both}
+    .b4{stroke-dasharray:220;animation:bdr 0.45s ease 0.56s both}
+    .b5{stroke-dasharray:220;animation:bdr 0.45s ease 0.66s both}
 
-    .sh  { animation: shimmer 5s ease-in-out 1.5s infinite; }
-    .hdr { font-family:'Roboto Mono',monospace; font-size:9px; fill:rgba(74,240,160,0.5); letter-spacing:3px; }
-    .tag { font-family:'Roboto Mono',monospace; font-size:10px; fill:rgba(232,232,234,0.6); }
+    .br{animation:breathe 5s ease-in-out 1.2s infinite}
+
+    .hdr{font-family:'Roboto Mono',monospace;font-size:9px;fill:rgba(74,240,160,0.5);letter-spacing:3px}
+    .tag{font-family:'Roboto Mono',monospace;font-size:10px;fill:rgba(232,232,234,0.58);text-anchor:middle}
   </style>
 
-  <rect class="bar" x="0" y="0" width="3" height="90" fill="#4af0a0" opacity="0.4"/>
   <line x1="0" y1="0"  x2="800" y2="0"  stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-  <line x1="0" y1="90" x2="800" y2="90" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
-  <text class="hdr" x="18" y="22">// INTERESTS</text>
+  <line x1="0" y1="96" x2="800" y2="96" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <rect class="acc" x="0" y="0" width="3" height="96" fill="#4af0a0" opacity="0.4"/>
 
-  <!-- Row of tags -->
+  <text class="hdr" x="14" y="20">// INTERESTS</text>
+
   <!-- NLP -->
-  <g class="t0 sh">
-    <rect class="br0" x="18" y="36" width="164" height="22" rx="3" fill="rgba(74,240,160,0.06)" stroke="rgba(74,240,160,0.2)" stroke-width="0.6"/>
-    <text class="tag" x="100" y="52" text-anchor="middle">Natural Language Processing</text>
+  <g class="g0 br">
+    <rect class="b0" x="14"  y="34" width="170" height="44" rx="2" fill="none" stroke="rgba(74,240,160,0.2)" stroke-width="0.7"/>
+    <text class="tag" x="99"  y="52">Natural Language</text>
+    <text class="tag" x="99"  y="68">Processing</text>
   </g>
   <!-- CV -->
-  <g class="t1 sh">
-    <rect class="br1" x="190" y="36" width="118" height="22" rx="3" fill="rgba(74,240,160,0.06)" stroke="rgba(74,240,160,0.2)" stroke-width="0.6"/>
-    <text class="tag" x="249" y="52" text-anchor="middle">Computer Vision</text>
+  <g class="g1 br">
+    <rect class="b1" x="192" y="34" width="120" height="44" rx="2" fill="none" stroke="rgba(74,240,160,0.2)" stroke-width="0.7"/>
+    <text class="tag" x="252" y="52">Computer</text>
+    <text class="tag" x="252" y="68">Vision</text>
   </g>
   <!-- Climate -->
-  <g class="t2 sh">
-    <rect class="br2" x="316" y="36" width="118" height="22" rx="3" fill="rgba(74,240,160,0.06)" stroke="rgba(74,240,160,0.2)" stroke-width="0.6"/>
-    <text class="tag" x="375" y="52" text-anchor="middle">Climate Analytics</text>
+  <g class="g2 br">
+    <rect class="b2" x="320" y="34" width="120" height="44" rx="2" fill="none" stroke="rgba(74,240,160,0.2)" stroke-width="0.7"/>
+    <text class="tag" x="380" y="52">Climate</text>
+    <text class="tag" x="380" y="68">Analytics</text>
   </g>
   <!-- Disaster -->
-  <g class="t3 sh">
-    <rect class="br3" x="442" y="36" width="126" height="22" rx="3" fill="rgba(74,240,160,0.06)" stroke="rgba(74,240,160,0.2)" stroke-width="0.6"/>
-    <text class="tag" x="505" y="52" text-anchor="middle">Disaster Prediction</text>
+  <g class="g3 br">
+    <rect class="b3" x="448" y="34" width="120" height="44" rx="2" fill="none" stroke="rgba(74,240,160,0.2)" stroke-width="0.7"/>
+    <text class="tag" x="508" y="52">Disaster</text>
+    <text class="tag" x="508" y="68">Prediction</text>
   </g>
   <!-- Code -->
-  <g class="t4 sh">
-    <rect class="br4" x="576" y="36" width="104" height="22" rx="3" fill="rgba(74,240,160,0.06)" stroke="rgba(74,240,160,0.2)" stroke-width="0.6"/>
-    <text class="tag" x="628" y="52" text-anchor="middle">Code Synthesis</text>
+  <g class="g4 br">
+    <rect class="b4" x="576" y="34" width="104" height="44" rx="2" fill="none" stroke="rgba(74,240,160,0.2)" stroke-width="0.7"/>
+    <text class="tag" x="628" y="52">Code</text>
+    <text class="tag" x="628" y="68">Synthesis</text>
   </g>
   <!-- Low-resource -->
-  <g class="t5 sh">
-    <rect class="br5" x="688" y="36" width="96" height="22" rx="3" fill="rgba(74,240,160,0.06)" stroke="rgba(74,240,160,0.2)" stroke-width="0.6"/>
-    <text class="tag" x="736" y="52" text-anchor="middle">Low-resource</text>
+  <g class="g5 br">
+    <rect class="b5" x="688" y="34" width="100" height="44" rx="2" fill="none" stroke="rgba(74,240,160,0.2)" stroke-width="0.7"/>
+    <text class="tag" x="738" y="52">Low</text>
+    <text class="tag" x="738" y="68">Resource</text>
   </g>
 </svg>
