@@ -1,65 +1,66 @@
 <svg width="800" height="160" viewBox="0 0 800 160" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes scanline {
-      0% { transform: translateY(-10px); opacity: 0; }
-      10% { opacity: 1; }
-      90% { opacity: 1; }
-      100% { transform: translateY(10px); opacity: 0; }
-    }
     @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(8px); }
+      0%   { opacity: 0; transform: translateY(10px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
     @keyframes drawLine {
-      0% { stroke-dashoffset: 800; }
+      0%   { stroke-dashoffset: 900; }
       100% { stroke-dashoffset: 0; }
     }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
     @keyframes glowPulse {
-      0%, 100% { opacity: 0.15; }
-      50% { opacity: 0.35; }
+      0%, 100% { opacity: 0.12; rx: 55px; }
+      50%       { opacity: 0.28; rx: 65px; }
     }
-    .name { animation: fadeUp 0.7s cubic-bezier(.22,1,.36,1) 0.1s both; }
-    .role { animation: fadeUp 0.7s cubic-bezier(.22,1,.36,1) 0.4s both; }
-    .loc  { animation: fadeUp 0.7s cubic-bezier(.22,1,.36,1) 0.65s both; }
-    .line { animation: drawLine 1.2s cubic-bezier(.22,1,.36,1) 0.3s both; stroke-dasharray: 800; }
-    .dot-pulse { animation: glowPulse 2.8s ease-in-out infinite; }
-    .cursor { animation: blink 1.1s step-end infinite; }
-    .graduate-tag { animation: fadeIn 0.6s ease 1.2s both; }
+    @keyframes bracketDraw {
+      0%   { stroke-dashoffset: 60; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes dotBlink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+    @keyframes shimmer {
+      0%   { opacity: 0.4; }
+      50%  { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+    .name     { animation: fadeUp 0.8s cubic-bezier(.22,1,.36,1) 0.3s both; }
+    .role     { animation: fadeUp 0.7s cubic-bezier(.22,1,.36,1) 0.6s both; }
+    .loc      { animation: fadeUp 0.7s cubic-bezier(.22,1,.36,1) 0.85s both; }
+    .tl       { stroke-dasharray: 900; animation: drawLine 1.4s cubic-bezier(.22,1,.36,1) 0.1s both; }
+    .bl       { stroke-dasharray: 900; animation: drawLine 1.4s cubic-bezier(.22,1,.36,1) 0.2s both; }
+    .br1      { stroke-dasharray: 60; animation: bracketDraw 0.5s ease 0.8s both; }
+    .br2      { stroke-dasharray: 60; animation: bracketDraw 0.5s ease 0.9s both; }
+    .br3      { stroke-dasharray: 60; animation: bracketDraw 0.5s ease 1.0s both; }
+    .br4      { stroke-dasharray: 60; animation: bracketDraw 0.5s ease 1.1s both; }
+    .glow     { animation: glowPulse 3.5s ease-in-out infinite; }
+    .dot      { animation: dotBlink 2.2s ease-in-out infinite; }
+    .shimmer  { animation: shimmer 4s ease-in-out 1.5s infinite; }
   </style>
 
-  <!-- background glow -->
-  <ellipse cx="400" cy="80" rx="320" ry="55" fill="#4af0a0" class="dot-pulse"/>
+  <ellipse cx="400" cy="80" rx="300" ry="52" fill="#4af0a0" class="glow"/>
 
-  <!-- scan line decoration -->
-  <line x1="60" y1="22" x2="740" y2="22" stroke="#4af0a0" stroke-width="0.4" stroke-opacity="0.2" class="line"/>
-  <line x1="60" y1="138" x2="740" y2="138" stroke="#4af0a0" stroke-width="0.4" stroke-opacity="0.2" class="line"/>
+  <line class="tl" x1="50" y1="18" x2="750" y2="18" stroke="#4af0a0" stroke-width="0.5" stroke-opacity="0.25"/>
+  <line class="bl" x1="50" y1="142" x2="750" y2="142" stroke="#4af0a0" stroke-width="0.5" stroke-opacity="0.25"/>
 
-  <!-- name -->
-  <text class="name" x="400" y="78" font-family="'Courier New',Courier,monospace" font-size="52" font-weight="700" fill="#e8e8ea" text-anchor="middle" letter-spacing="-2.5">
-    MUZ7<tspan fill="#4af0a0" letter-spacing="0">.</tspan>AHID
+  <path class="br1" d="M50 45 L50 18 L80 18" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+  <path class="br2" d="M750 45 L750 18 L720 18" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+  <path class="br3" d="M50 115 L50 142 L80 142" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+  <path class="br4" d="M750 115 L750 142 L720 142" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+
+  <text class="name" x="400" y="82" font-family="'Courier New',Courier,monospace" font-size="50" font-weight="700" fill="#e8e8ea" text-anchor="middle" letter-spacing="-2">
+    MUZAHID<tspan fill="#4af0a0">.</tspan>
   </text>
 
-  <!-- role -->
-  <text class="role" x="400" y="108" font-family="'Courier New',Courier,monospace" font-size="11" fill="rgba(232,232,234,0.38)" text-anchor="middle" letter-spacing="5">
+  <text class="role shimmer" x="400" y="108" font-family="'Courier New',Courier,monospace" font-size="11" fill="rgba(232,232,234,0.35)" text-anchor="middle" letter-spacing="5">
     RESEARCHER  ·  DEVELOPER  ·  GRADUATE
   </text>
 
-  <!-- location -->
   <text class="loc" x="400" y="128" font-family="'Courier New',Courier,monospace" font-size="9.5" fill="rgba(74,240,160,0.45)" text-anchor="middle" letter-spacing="3">
     ⌘  GREEN UNIVERSITY OF BANGLADESH  ·  CSE
   </text>
 
-  <!-- corner brackets -->
-  <path d="M60 40 L60 22 L82 22" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.4" fill="none" class="line"/>
-  <path d="M740 40 L740 22 L718 22" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.4" fill="none" class="line"/>
-  <path d="M60 120 L60 138 L82 138" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.4" fill="none" class="line"/>
-  <path d="M740 120 L740 138 L718 138" stroke="#4af0a0" stroke-width="1" stroke-opacity="0.4" fill="none" class="line"/>
+  <circle class="dot" cx="368" cy="108" r="2.5" fill="#4af0a0" opacity="0.6"/>
+  <circle class="dot" cx="432" cy="108" r="2.5" fill="#4af0a0" opacity="0.6"/>
 </svg>

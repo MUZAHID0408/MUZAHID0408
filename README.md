@@ -21,16 +21,6 @@ Building predictive models for climate-driven disasters, publishing on how datas
 
 <div align="center">
 
-![research](research.svg)
-
-</div>
-
-<br>
-
----
-
-<div align="center">
-
 ![stack](stack.svg)
 
 </div>
@@ -54,6 +44,16 @@ Building predictive models for climate-driven disasters, publishing on how datas
 ```
 
 `Natural Language Processing` &nbsp; `Computer Vision` &nbsp; `Climate Analytics` &nbsp; `Disaster Prediction` &nbsp; `Code Synthesis` &nbsp; `Low-resource Model Behavior`
+
+<br>
+
+---
+
+<div align="center">
+
+![research](research.svg)
+
+</div>
 
 <br>
 
