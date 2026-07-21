@@ -138,7 +138,7 @@
     <text class="idx-txt idx0" x="14" y="52" fill="rgba(74,240,160,0.38)">01</text>
   </g>
   <g class="tw0">
-    <text class="task" x="40" y="52">Flood prediction pipeline — raw data to deployable model</text>
+    <text class="task" x="40" y="52">Research on developing machine learning models for analyzing climate change...</text>
   </g>
 
   <!-- Progress bar track + animated fill -->
@@ -166,7 +166,7 @@
     <text class="idx-txt idx1" x="14" y="98" fill="rgba(74,240,160,0.38)">02</text>
   </g>
   <g class="tw1">
-    <text class="task" x="40" y="98">Flutter — learning by building, not by tutorial</text>
+    <text class="task" x="40" y="98">Developing useful apps library tool...</text>
   </g>
 
   <rect x="598" y="87" width="186" height="14" rx="2" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
@@ -175,7 +175,7 @@
   </g>
   <g class="badge1">
     <rect x="598" y="87" width="186" height="14" rx="2" fill="rgba(240,184,74,0.06)" stroke="rgba(240,184,74,0.24)" stroke-width="0.6"/>
-    <text class="badge-t" x="691" y="98" fill="rgba(240,184,74,0.9)">LEARNING</text>
+    <text class="badge-t" x="691" y="98" fill="rgba(240,184,74,0.9)">DEVELOPING</text>
     <text x="610" y="98" font-family="'Roboto Mono',monospace" font-size="7" fill="rgba(240,184,74,0.4)">▶ ▶ ·</text>
   </g>
 
@@ -186,7 +186,7 @@
     <text class="idx-txt idx2" x="14" y="144" fill="rgba(74,240,160,0.38)">03</text>
   </g>
   <g class="tw2">
-    <text class="task" x="40" y="144">Full-stack depth — less surface area, more structural understanding</text>
+    <text class="task" x="40" y="144">FullStack depth - more structural understanding is required now a days...</text>
   </g>
 
   <rect x="598" y="133" width="186" height="14" rx="2" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
