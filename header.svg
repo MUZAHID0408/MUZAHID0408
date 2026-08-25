@@ -210,7 +210,7 @@
   <!-- Role — horizontal scan reveal -->
   <g class="role">
     <text x="400" y="164" font-family="'Roboto Mono',monospace" font-size="10" font-weight="400"
-      fill="rgba(232,232,234,0.32)" text-anchor="middle" letter-spacing="5.5">RESEARCHER  ·  DEVELOPER  ·  GRADUATE</text>
+      fill="rgba(232,232,234,0.32)" text-anchor="middle" letter-spacing="5.5">RESEARCHER  ·  DEVELOPER  ·  AI/ML ENTHUSIAST</text>
   </g>
 
   <!-- Sub info — stagger up-fade -->
