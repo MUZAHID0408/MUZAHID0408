@@ -1,197 +1,177 @@
-<svg width="800" height="110" viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="nodeGlow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="tagGlow">
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <!-- Individual tag clip paths to contain border draw -->
-    <clipPath id="tc0"><rect x="14"  y="34" width="170" height="52"/></clipPath>
-    <clipPath id="tc1"><rect x="192" y="34" width="120" height="52"/></clipPath>
-    <clipPath id="tc2"><rect x="320" y="34" width="120" height="52"/></clipPath>
-    <clipPath id="tc3"><rect x="448" y="34" width="120" height="52"/></clipPath>
-    <clipPath id="tc4"><rect x="576" y="34" width="104" height="52"/></clipPath>
-    <clipPath id="tc5"><rect x="688" y="34" width="100" height="52"/></clipPath>
-  </defs>
+<svg width="800" height="110" viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5ZmU5NDdlMC0xNThiLTQ4MjktOWNkYS1mNWYyMTk3MDhhNTkAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLJKZVndPV0rk7ToF5c6CeAAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpiNDQ1OTM4Yi1mMDE5LTQzYzctOGM0NS0zOWQ2ZDYwNjdiZGRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNovOdkjaAGOcwdvIHVrsCKQgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggRMH18ntC+us1VavqbizfhoCz+sXWZ31WEHLewdw0jLekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaBVVVVObfv3IxaNBGN0Q+cwAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCA6Xizo3dy6XkSrq5fObLRxM/ndoYpZCnuyUOpjpLeL+2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiiZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjlmZTk0N2UwLTE1OGItNDgyOS05Y2RhLWY1ZjIxOTcwOGE1OS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjFmY2I2YjYyLWUyZTAtNGY1Yi04YjA3LTU0YmNhZGNmZTg0OHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBEwfXye0L66zVVq+puLN+GgLP6xdZnfVYQct7B3DSMt6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggZeAvsQOSA2M263gTXUMi16gSKMvK5l8P3Xbn8IScRsyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg49r7uFJVwckT5ORDlj/7x10pYRD5YbTGmoCWu8HjGI90Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNTaG6Z7XPe81iLnbJ/QOdfWRHKgVvDZkgz1l+3/ywUD030NyQhyBJWPrLqwLMmkMEoiXy1QarynmYwa+5BuXjo=</c2pa:manifest></metadata>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&amp;display=swap');
 
-    /* ── Network wire draw ── */
+    /* ══ THEME TOKENS ══ (light = default, dark = media query) */
+    :root{
+      --accent: #078a57;
+      --hdr:    rgba(5,110,70,0.90);
+      --tag:    rgba(31,35,40,0.90);
+      --edge:   rgba(31,35,40,0.18);
+      --bar:    0.75;
+      --perim:  0.70;   /* tag outline opacity */
+      --wire:   0.28;   /* connecting wires    */
+      --dot:    0.75;   /* corner node dot     */
+      --fill-lo:0.05;   /* tag fill breathe    */
+      --fill-hi:0.13;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --accent: #4af0a0;
+        --hdr:    rgba(74,240,160,0.65);
+        --tag:    rgba(232,232,234,0.80);
+        --edge:   rgba(255,255,255,0.09);
+        --bar:    0.45;
+        --perim:  0.28;
+        --wire:   0.07;
+        --dot:    0.45;
+        --fill-lo:0.04;
+        --fill-hi:0.11;
+      }
+    }
+
     @keyframes wireDraw0{0%{stroke-dashoffset:800}100%{stroke-dashoffset:0}}
-
-    /* ── Node materialize: scales from center with bright flash ── */
-    @keyframes nodeIn{
-      0%  {opacity:0;transform:scale(0);filter:blur(4px)}
-      40% {opacity:1;transform:scale(1.18);filter:blur(1px)}
-      65% {transform:scale(0.93);filter:blur(0)}
-      80% {transform:scale(1.04)}
-      100%{opacity:1;transform:scale(1)}
-    }
-
-    /* ── Border: clockwise draw (perimeter trace) ── */
-    @keyframes perimDraw{
-      0%  {stroke-dashoffset:440}
-      100%{stroke-dashoffset:0}
-    }
-
-    /* ── Tag content: fade up after border drawn ── */
+    @keyframes perimDraw{0%{stroke-dashoffset:440}100%{stroke-dashoffset:0}}
     @keyframes tagFadeUp{
       0%  {opacity:0;transform:translateY(6px)}
       100%{opacity:1;transform:translateY(0)}
     }
-
-    /* ── Connection dots along wire ── */
-    @keyframes dotTrav{
-      0%  {offset-distance:0%;opacity:0}
-      10% {opacity:1}
-      90% {opacity:1}
-      100%{offset-distance:100%;opacity:0}
-    }
-
-    /* ── Ambient node pulse (ongoing) ── */
     @keyframes ambPulse{
       0%  {r:4;opacity:0.6;stroke-width:1}
       50% {r:9;opacity:0;stroke-width:0.4}
       100%{r:4;opacity:0}
     }
-
-    /* ── Fill highlight on hover (CSS :hover doesn't animate in SVG but we use breathe) ── */
     @keyframes breathe{
-      0%,100%{opacity:0.04}
-      50%    {opacity:0.11}
+      0%,100%{opacity:var(--fill-lo)}
+      50%    {opacity:var(--fill-hi)}
     }
-
-    /* Accent bar */
     @keyframes accExtend{0%{transform:scaleY(0);transform-origin:top}100%{transform:scaleY(1)}}
     @keyframes hdrEvap  {0%{opacity:0;filter:blur(6px)}100%{opacity:1;filter:blur(0)}}
 
     .acc-bar  { animation:accExtend 0.5s cubic-bezier(.22,1,.36,1) 0s both }
     .hdr-lbl  { animation:hdrEvap   0.5s ease 0.10s both }
 
-    /* Stagger timing per tag: 0→5 */
-    .wire0 { stroke-dasharray:800; animation:wireDraw0 0.35s ease 0.10s both }
-    .wire1 { stroke-dasharray:800; animation:wireDraw0 0.30s ease 0.22s both }
+    .wire0 { stroke-dasharray:800; animation:wireDraw0 0.35s ease 0.1s both }
+    .wire1 { stroke-dasharray:800; animation:wireDraw0 0.3s ease 0.22s both }
     .wire2 { stroke-dasharray:800; animation:wireDraw0 0.28s ease 0.34s both }
     .wire3 { stroke-dasharray:800; animation:wireDraw0 0.28s ease 0.46s both }
     .wire4 { stroke-dasharray:800; animation:wireDraw0 0.26s ease 0.58s both }
-    .wire5 { stroke-dasharray:800; animation:wireDraw0 0.25s ease 0.70s both }
+    .wire5 { stroke-dasharray:800; animation:wireDraw0 0.25s ease 0.7s both }
 
-    /* Perimeter traces */
     .perim0 { stroke-dasharray:440; animation:perimDraw 0.55s cubic-bezier(.22,1,.36,1) 0.15s both }
-    .perim1 { stroke-dasharray:340; animation:perimDraw 0.48s cubic-bezier(.22,1,.36,1) 0.27s both }
-    .perim2 { stroke-dasharray:340; animation:perimDraw 0.44s cubic-bezier(.22,1,.36,1) 0.39s both }
-    .perim3 { stroke-dasharray:340; animation:perimDraw 0.44s cubic-bezier(.22,1,.36,1) 0.51s both }
-    .perim4 { stroke-dasharray:312; animation:perimDraw 0.40s cubic-bezier(.22,1,.36,1) 0.63s both }
-    .perim5 { stroke-dasharray:300; animation:perimDraw 0.38s cubic-bezier(.22,1,.36,1) 0.75s both }
-
-    /* Content stagger */
-    .cnt0 { animation:tagFadeUp 0.4s ease 0.50s both }
-    .cnt1 { animation:tagFadeUp 0.4s ease 0.62s both }
-    .cnt2 { animation:tagFadeUp 0.4s ease 0.74s both }
-    .cnt3 { animation:tagFadeUp 0.4s ease 0.86s both }
-    .cnt4 { animation:tagFadeUp 0.4s ease 0.98s both }
-    .cnt5 { animation:tagFadeUp 0.4s ease 1.10s both }
-
-    /* Fills breathe after entry */
+    .cnt0 { animation:tagFadeUp 0.4s ease 0.5s both }
     .fill0 { animation:breathe 6.0s ease-in-out 1.0s infinite }
-    .fill1 { animation:breathe 5.5s ease-in-out 1.2s infinite }
-    .fill2 { animation:breathe 6.5s ease-in-out 0.8s infinite }
-    .fill3 { animation:breathe 5.8s ease-in-out 1.4s infinite }
-    .fill4 { animation:breathe 6.2s ease-in-out 1.0s infinite }
-    .fill5 { animation:breathe 5.7s ease-in-out 1.6s infinite }
-
-    /* Node pulses (infinite after entry) */
     .nd0 { animation:ambPulse 2.8s ease-out 1.4s infinite }
+    .perim1 { stroke-dasharray:340; animation:perimDraw 0.48s cubic-bezier(.22,1,.36,1) 0.27s both }
+    .cnt1 { animation:tagFadeUp 0.4s ease 0.62s both }
+    .fill1 { animation:breathe 5.5s ease-in-out 1.2s infinite }
     .nd1 { animation:ambPulse 3.0s ease-out 1.8s infinite }
+    .perim2 { stroke-dasharray:340; animation:perimDraw 0.44s cubic-bezier(.22,1,.36,1) 0.39s both }
+    .cnt2 { animation:tagFadeUp 0.4s ease 0.74s both }
+    .fill2 { animation:breathe 6.5s ease-in-out 0.8s infinite }
     .nd2 { animation:ambPulse 2.6s ease-out 2.2s infinite }
+    .perim3 { stroke-dasharray:340; animation:perimDraw 0.44s cubic-bezier(.22,1,.36,1) 0.51s both }
+    .cnt3 { animation:tagFadeUp 0.4s ease 0.86s both }
+    .fill3 { animation:breathe 5.8s ease-in-out 1.4s infinite }
     .nd3 { animation:ambPulse 3.2s ease-out 1.6s infinite }
+    .perim4 { stroke-dasharray:312; animation:perimDraw 0.4s cubic-bezier(.22,1,.36,1) 0.63s both }
+    .cnt4 { animation:tagFadeUp 0.4s ease 0.98s both }
+    .fill4 { animation:breathe 6.2s ease-in-out 1.0s infinite }
     .nd4 { animation:ambPulse 2.9s ease-out 2.0s infinite }
+    .perim5 { stroke-dasharray:300; animation:perimDraw 0.38s cubic-bezier(.22,1,.36,1) 0.75s both }
+    .cnt5 { animation:tagFadeUp 0.4s ease 1.1s both }
+    .fill5 { animation:breathe 5.7s ease-in-out 1.6s infinite }
     .nd5 { animation:ambPulse 2.7s ease-out 2.4s infinite }
 
-    /* Typography */
-    .hdr {font-family:'Roboto Mono',monospace;font-size:9px;fill:rgba(74,240,160,0.55);letter-spacing:3px}
-    .tag {font-family:'Roboto Mono',monospace;font-size:9.5px;fill:rgba(232,232,234,0.65);text-anchor:middle;letter-spacing:0.5px}
+    /* colour hooks */
+    .acc-f{fill:var(--accent)}
+    .acc-s{stroke:var(--accent)}
+    .edge{stroke:var(--edge)}
+    .acc-bar{fill:var(--accent);opacity:var(--bar)}
+    .perim{stroke-opacity:var(--perim)}
+    .wire{stroke-opacity:var(--wire)}
+    .nodedot{opacity:var(--dot)}
+
+    /* typography (sizes +3) */
+    .hdr {font-family:'Roboto Mono',monospace;font-size:12px;fill:var(--hdr);letter-spacing:3px}
+    .tag {font-family:'Roboto Mono',monospace;font-size:12.5px;fill:var(--tag);text-anchor:middle;letter-spacing:0.5px}
   </style>
 
   <!-- Border rules -->
-  <line x1="0" y1="0"   x2="800" y2="0"   stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-  <line x1="0" y1="110" x2="800" y2="110" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <line class="edge" x1="0" y1="0"   x2="800" y2="0"   stroke-width="0.7"/>
+  <line class="edge" x1="0" y1="110" x2="800" y2="110" stroke-width="0.7"/>
 
   <!-- Left accent bar -->
-  <rect class="acc-bar" x="0" y="0" width="3" height="110" fill="#4af0a0" opacity="0.45"/>
+  <rect class="acc-bar" x="0" y="0" width="3" height="110"/>
 
   <!-- Header -->
   <text class="hdr hdr-lbl" x="14" y="20">// INTERESTS</text>
 
-  <!-- Network wires connecting nodes (horizontal baseline) -->
-  <line class="wire0" x1="14"  y1="60" x2="192" y2="60" stroke="rgba(74,240,160,0.06)" stroke-width="0.6"/>
-  <line class="wire1" x1="192" y1="60" x2="320" y2="60" stroke="rgba(74,240,160,0.05)" stroke-width="0.6"/>
-  <line class="wire2" x1="320" y1="60" x2="448" y2="60" stroke="rgba(74,240,160,0.05)" stroke-width="0.6"/>
-  <line class="wire3" x1="448" y1="60" x2="576" y2="60" stroke="rgba(74,240,160,0.05)" stroke-width="0.6"/>
-  <line class="wire4" x1="576" y1="60" x2="688" y2="60" stroke="rgba(74,240,160,0.05)" stroke-width="0.6"/>
-  <line class="wire5" x1="688" y1="60" x2="790" y2="60" stroke="rgba(74,240,160,0.04)" stroke-width="0.6"/>
+  <!-- Network wires -->
+  <line class="wire0 acc-s wire" x1="14" y1="60" x2="192" y2="60" stroke-width="0.7"/>
+  <line class="wire1 acc-s wire" x1="192" y1="60" x2="320" y2="60" stroke-width="0.7"/>
+  <line class="wire2 acc-s wire" x1="320" y1="60" x2="448" y2="60" stroke-width="0.7"/>
+  <line class="wire3 acc-s wire" x1="448" y1="60" x2="576" y2="60" stroke-width="0.7"/>
+  <line class="wire4 acc-s wire" x1="576" y1="60" x2="688" y2="60" stroke-width="0.7"/>
+  <line class="wire5 acc-s wire" x1="688" y1="60" x2="790" y2="60" stroke-width="0.7"/>
 
-  <!-- ── TAG 0: Natural Language Processing ── -->
-  <rect class="fill0" x="14"  y="34" width="170" height="52" rx="2" fill="#4af0a0"/>
-  <rect class="perim0" x="14"  y="34" width="170" height="52" rx="2" fill="none" stroke="rgba(74,240,160,0.28)" stroke-width="0.8"/>
-  <!-- node dot top-left corner -->
-  <circle class="nd0" cx="14"  cy="34" r="4" fill="none" stroke="#4af0a0" opacity="0.5"/>
-  <circle cx="14" cy="34" r="2" fill="#4af0a0" opacity="0.35"/>
+  <!-- TAG 0: Natural Language Processing -->
+  <rect class="fill0 acc-f" x="14" y="34" width="170" height="52" rx="2"/>
+  <rect class="perim0 acc-s perim" x="14" y="34" width="170" height="52" rx="2" fill="none" stroke-width="0.9"/>
+  <circle class="nd0 acc-s" cx="14" cy="34" r="4" fill="none"/>
+  <circle class="acc-f nodedot" cx="14" cy="34" r="2.5"/>
   <g class="cnt0">
-    <text class="tag" x="99"  y="57">Natural Language</text>
-    <text class="tag" x="99"  y="73">Processing</text>
+    <text class="tag" x="99" y="56">Natural Language</text>
+    <text class="tag" x="99" y="73">Processing</text>
   </g>
 
-  <!-- ── TAG 1: Computer Vision ── -->
-  <rect class="fill1" x="192" y="34" width="120" height="52" rx="2" fill="#4af0a0"/>
-  <rect class="perim1" x="192" y="34" width="120" height="52" rx="2" fill="none" stroke="rgba(74,240,160,0.25)" stroke-width="0.8"/>
-  <circle class="nd1" cx="192" cy="34" r="4" fill="none" stroke="#4af0a0" opacity="0.5"/>
-  <circle cx="192" cy="34" r="2" fill="#4af0a0" opacity="0.35"/>
+  <!-- TAG 1: Computer Vision -->
+  <rect class="fill1 acc-f" x="192" y="34" width="120" height="52" rx="2"/>
+  <rect class="perim1 acc-s perim" x="192" y="34" width="120" height="52" rx="2" fill="none" stroke-width="0.9"/>
+  <circle class="nd1 acc-s" cx="192" cy="34" r="4" fill="none"/>
+  <circle class="acc-f nodedot" cx="192" cy="34" r="2.5"/>
   <g class="cnt1">
-    <text class="tag" x="252" y="57">Computer</text>
+    <text class="tag" x="252" y="56">Computer</text>
     <text class="tag" x="252" y="73">Vision</text>
   </g>
 
-  <!-- ── TAG 2: Climate Analytics ── -->
-  <rect class="fill2" x="320" y="34" width="120" height="52" rx="2" fill="#4af0a0"/>
-  <rect class="perim2" x="320" y="34" width="120" height="52" rx="2" fill="none" stroke="rgba(74,240,160,0.25)" stroke-width="0.8"/>
-  <circle class="nd2" cx="320" cy="34" r="4" fill="none" stroke="#4af0a0" opacity="0.5"/>
-  <circle cx="320" cy="34" r="2" fill="#4af0a0" opacity="0.35"/>
+  <!-- TAG 2: Climate Analytics -->
+  <rect class="fill2 acc-f" x="320" y="34" width="120" height="52" rx="2"/>
+  <rect class="perim2 acc-s perim" x="320" y="34" width="120" height="52" rx="2" fill="none" stroke-width="0.9"/>
+  <circle class="nd2 acc-s" cx="320" cy="34" r="4" fill="none"/>
+  <circle class="acc-f nodedot" cx="320" cy="34" r="2.5"/>
   <g class="cnt2">
-    <text class="tag" x="380" y="57">Climate</text>
+    <text class="tag" x="380" y="56">Climate</text>
     <text class="tag" x="380" y="73">Analytics</text>
   </g>
 
-  <!-- ── TAG 3: Disaster Prediction ── -->
-  <rect class="fill3" x="448" y="34" width="120" height="52" rx="2" fill="#4af0a0"/>
-  <rect class="perim3" x="448" y="34" width="120" height="52" rx="2" fill="none" stroke="rgba(74,240,160,0.25)" stroke-width="0.8"/>
-  <circle class="nd3" cx="448" cy="34" r="4" fill="none" stroke="#4af0a0" opacity="0.5"/>
-  <circle cx="448" cy="34" r="2" fill="#4af0a0" opacity="0.35"/>
+  <!-- TAG 3: Disaster Prediction -->
+  <rect class="fill3 acc-f" x="448" y="34" width="120" height="52" rx="2"/>
+  <rect class="perim3 acc-s perim" x="448" y="34" width="120" height="52" rx="2" fill="none" stroke-width="0.9"/>
+  <circle class="nd3 acc-s" cx="448" cy="34" r="4" fill="none"/>
+  <circle class="acc-f nodedot" cx="448" cy="34" r="2.5"/>
   <g class="cnt3">
-    <text class="tag" x="508" y="57">Disaster</text>
+    <text class="tag" x="508" y="56">Disaster</text>
     <text class="tag" x="508" y="73">Prediction</text>
   </g>
 
-  <!-- ── TAG 4: Code Synthesis ── -->
-  <rect class="fill4" x="576" y="34" width="104" height="52" rx="2" fill="#4af0a0"/>
-  <rect class="perim4" x="576" y="34" width="104" height="52" rx="2" fill="none" stroke="rgba(74,240,160,0.22)" stroke-width="0.8"/>
-  <circle class="nd4" cx="576" cy="34" r="4" fill="none" stroke="#4af0a0" opacity="0.5"/>
-  <circle cx="576" cy="34" r="2" fill="#4af0a0" opacity="0.35"/>
+  <!-- TAG 4: Code Synthesis -->
+  <rect class="fill4 acc-f" x="576" y="34" width="104" height="52" rx="2"/>
+  <rect class="perim4 acc-s perim" x="576" y="34" width="104" height="52" rx="2" fill="none" stroke-width="0.9"/>
+  <circle class="nd4 acc-s" cx="576" cy="34" r="4" fill="none"/>
+  <circle class="acc-f nodedot" cx="576" cy="34" r="2.5"/>
   <g class="cnt4">
-    <text class="tag" x="628" y="57">Code</text>
+    <text class="tag" x="628" y="56">Code</text>
     <text class="tag" x="628" y="73">Synthesis</text>
   </g>
 
-  <!-- ── TAG 5: Low Resource ── -->
-  <rect class="fill5" x="688" y="34" width="100" height="52" rx="2" fill="#4af0a0"/>
-  <rect class="perim5" x="688" y="34" width="100" height="52" rx="2" fill="none" stroke="rgba(74,240,160,0.22)" stroke-width="0.8"/>
-  <circle class="nd5" cx="688" cy="34" r="4" fill="none" stroke="#4af0a0" opacity="0.5"/>
-  <circle cx="688" cy="34" r="2" fill="#4af0a0" opacity="0.35"/>
+  <!-- TAG 5: Low Resource -->
+  <rect class="fill5 acc-f" x="688" y="34" width="100" height="52" rx="2"/>
+  <rect class="perim5 acc-s perim" x="688" y="34" width="100" height="52" rx="2" fill="none" stroke-width="0.9"/>
+  <circle class="nd5 acc-s" cx="688" cy="34" r="4" fill="none"/>
+  <circle class="acc-f nodedot" cx="688" cy="34" r="2.5"/>
   <g class="cnt5">
-    <text class="tag" x="738" y="57">Low</text>
+    <text class="tag" x="738" y="56">Low</text>
     <text class="tag" x="738" y="73">Resource</text>
   </g>
 </svg>
